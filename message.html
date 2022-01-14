@@ -1,0 +1,61 @@
+<html>
+    <head>
+	<base href="https://bigpc.online/">
+   <meta http-equiv="Content-type" content="text/html";charset="utf-8">
+    <link rel= "stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="./img/icon.jpg">	
+    <link rel="shortcut icon" type="image/icon" href="./img/icon.jpg">
+    <title>Cardshop - USA CVV KNOWN BALANCE and Worldwide CC & CVV from UK/US/DE/FR/CA/JP/AU/NL/IT/CH/DK/EU/Asia</title>
+    <script src="./js/javascript.js"></script>
+    </head>
+    <body onload="checklogin();updatecart();load()">
+     <div id="header">
+    <a href="index">&nbsp;&nbsp;&nbsp;&nbsp;<img src="./img/icon.jpg" alt="Cardshop - USA CVV KNOWN BALANCE and Worldwide CC & CVV from UK/US/DE/FR/CA/JP/AU/NL/IT/CH/DK/EU/Asia"></a>
+    <div class="navbar">
+    <a href="index">Home</a>
+    <a href="product">Product</a>
+    <a href="cart">Cart <span id="cartorder"></span></a>
+    <a href="message">Message <span style="color: red;">7</span></a>
+    <a href="wallet">Wallet</a>
+    <a href="order">Order</a>
+    <a href="setting">Setting</a>
+    <a href="index" onclick="logout()">Log Out</a> 
+    </div>
+    </div>
+    <div id="main">
+    <h3>Message Center</h3>
+    <form name="message"  action="message">
+        <textarea cols="60" rows="8" id="sendmessagearea"></textarea><br><br>
+        <input type="submit" class="buttn" value="Send message to support"  onclick="sendmessage()" ></form>
+        <br>
+        <h3>MixWallet: </h3>Hello <span id="usermessagename"></span>, welcome to MixWallet.<br>
+        Please only use this message function if you have problems or questions directly related to the site.<br>
+        Also many questions are already answered on the FAQ Page.<br>
+        <br><hr><br>
+        <div>
+    <h4>Your Message</h4>
+        <span id="usermessage"></span><br>
+        <span id ="customersupport"></span>
+        </div>
+    <hr><br>
+    <p>Due to too large message volume only our customers who have already bought from us will be able to use this message function.</p>
+    <p>If you want to talk to us, please make an order first. We always reply to people who made a purchase within 12-24 hours!</p>
+    <p>Tf you have any question</p>
+    <p>If you have questions about the site, delivery etc check our info page. For questions on how to buy bitcoins we recommend you check https://crypto.com/ and http://localbitcoin.com/</p>
+    <p>Due to large ,account will be deleted after <strong>7 days inactive </strong>only with 0 amount in wallet</p>
+    <p>To keep account active,it require to top up</p>
+    </div>
+    <div id="footer">
+    <div id="footertext">CVV KNOWN BALANCE CardShop
+    <a href="index">Home</a>
+    <a href="product">Product</a>
+    <a href="cart">Cart <span id="cartorder"></span></a>
+    <a href="message">Message <span style="color: red;">7</span></a>
+    <a href="wallet">Wallet</a>
+    <a href="order">Order</a>
+    <a href="setting">Setting</a>
+    <a href="index" onclick="logout()">Log Out</a>
+    </div>
+    </div>
+    </body>
+</html>

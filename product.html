@@ -1,7 +1,6 @@
-<! DOCTYPE HTML>
 <html>
     <head>
-    <base href="https://bigpc.online/">
+	<base href="https://bigpc.online/">
     <meta http-equiv="Content-type" content="text/html";charset="utf-8">
     <link rel= "stylesheet" href="style.css">
     <link rel="icon" type="image/icon" href="./img/icon.jpg">	
@@ -9,23 +8,28 @@
     <title>Cardshop - USA CVV KNOWN BALANCE and Worldwide CC & CVV from UK/US/DE/FR/CA/JP/AU/NL/IT/CH/DK/EU/Asia</title>
     <script src="./js/javascript.js"></script>
     </head>
-    <body onload="load()">
-       <div id="header">
+    <body onload="checklogin(); updatecart();load()">
+     <div id="header">
     <a href="index">&nbsp;&nbsp;&nbsp;&nbsp;<img src="./img/icon.jpg" alt="Cardshop - USA CVV KNOWN BALANCE and Worldwide CC & CVV from UK/US/DE/FR/CA/JP/AU/NL/IT/CH/DK/EU/Asia"></a>
     <div class="navbar">
     <a href="index">Home</a>
-    <a href="register">Register</a>
-    <a href="login">Login</a>
+    <a href="product">Product</a>
+    <a href="cart">Cart <span id="cartorder"></span></a>
+    <a href="message">Message <span style="color: red;">7</span></a>
+    <a href="wallet">Wallet</a>
+    <a href="order">Order</a>
+    <a href="setting">Setting</a>
+    <a href="index" onclick="logout()">Log Out</a> 
     </div>
     </div>
     <div id="main">
-    <h3>USA CVV KNOWN BALANCE</h3><img src="./img/image.jpg" class=floatimg style="float:left" alt="">You will get a High Quality known balance cc (100% live not some rubbish cards like my competitor ones) !<br> <br>
+     <h3>USA CVV KNOWN BALANCE</h3><img src="products/cat/100/image.jpg" class=floatimg style="float:left" alt="">You will get a High Quality known balance cc (100% live not some rubbish cards like my competitor ones) !<br> <br>
     You will get the current balance (how much is owed to bank by CH ) You will get available credit (so you know exactly how much to charge <br>  You will also get last statement date /amount and next statement due /amount just so you get your head round it (in case your method takes a while you know exactly how to move around it. <br><br>
     You will receive the following card format:<br> <br>
     CC number | expiry | CVV | first name | last name | address | city | State | zipcode | email | phone number (where available) | current balance | available credit | <br> <br>
     Cards designed for Paypal/stripe/square/venmo no more wasting time and money trying to find a card that works, with me you will hit first time guaranteed! <br><br>
-    Always bought cards not knowing how much to charge, and worried about charging too much and killing the card? NOT with my cards, you will know EXACTLY how much is in there so you can charge it without worrying ! <br> <br>
-    Happy buying ! <br><br>
+    Always bought cards not knowing how much to charge, and worried about charging too much and killing the card? NOT with my cards, you will know EXACTLY how much is in there so you can charge it without worrying ! <br> 
+    Happy buying ! <br>
     <table id="check" >
         <tbody>
             <thead>
@@ -70,10 +74,14 @@
     <div id="footer">
     <div id="footertext">CVV KNOWN BALANCE CardShop
     <a href="index">Home</a>
-    <a href="register">Register</a>
-    <a href="login">Login</a>
+    <a href="product">Product</a>
+    <a href="cart">Cart <span id="cartorder"></span></a>
+    <a href="message">Message <span style="color: red;">7</span></a>
+    <a href="wallet">Wallet</a>
+    <a href="order">Order</a>
+    <a href="setting">Setting</a>
+    <a href="index" onclick="logout()">Log Out</a>
     </div>
     </div>
     </body>
-
 </html>

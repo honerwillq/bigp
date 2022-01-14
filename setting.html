@@ -1,0 +1,57 @@
+<html>
+    <head>
+	<base href="https://bigpc.online/">
+   <meta http-equiv="Content-type" content="text/html";charset="utf-8">
+    <link rel= "stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="./img/icon.jpg">	
+    <link rel="shortcut icon" type="image/icon" href="./img/icon.jpg">
+    <title>Cardshop - USA CVV KNOWN BALANCE and Worldwide CC & CVV from UK/US/DE/FR/CA/JP/AU/NL/IT/CH/DK/EU/Asia</title>
+    <script src="./js/javascript.js"></script>
+    </head>
+    <body onload="checklogin();updatecart();load();checkuserpin();">
+     <div id="header">
+    <a href="index">&nbsp;&nbsp;&nbsp;&nbsp;<img src="./img/icon.jpg" alt="Cardshop - USA CVV KNOWN BALANCE and Worldwide CC & CVV from UK/US/DE/FR/CA/JP/AU/NL/IT/CH/DK/EU/Asia"></a>
+    <div class="navbar">
+    <a href="index">Home</a>
+    <a href="product">Product</a>
+    <a href="cart">Cart <span id="cartorder"></span></a>
+    <a href="message">Message <span style="color: red;">7</span></a>
+    <a href="wallet">Wallet</a>
+    <a href="order">Order</a>
+    <a href="setting">Setting</a>
+    <a href="index" onclick="logout()">Log Out</a> 
+    </div>
+    </div>
+    <div id="main">
+    <h3>Account Setting </h3>
+    <p id="accname"></p>
+    <strong>Change password:</strong><br><br>
+    <form action="product">
+    Current password:<br><input class="txt" type="password" name="password" size="30" id="password" required="" onfocus="this.value=''" autocomplete="off"><br><br>
+    New Password :<br><input class="txt" type="password" name="password1" size="30" id="password1" required="" onfocus="this.value=''" autocomplete="off"><br><br>
+   Repeat new password:<br><input class="txt" type="password" name="password2" size="30" id="password2" required="" onfocus="this.value=''" autocomplete="off"><br><br>
+    <input type="submit" class="buttn" value="Change Password" onclick="checkpass(); validatepassword2(); passpassword1();"><br><br>
+    <p id="sendmessage1"></p>
+    </form>
+     <form  id="pin"action="product">
+        PIN (6 characters): <input class="txt" type="text" autocomplete="off"  size="6" pattern="\d*" maxlength="6" minlength="6"id="pinn1" onfocus="this.value=''" required=""> 
+        Repeat PIN: <input class="txt" type="text" autocomplete="off"  size="6" pattern="\d*" maxlength="6" minlength="6" id="pinn2" onfocus="this.value=''" required=""><br><br><strong><font color=RED>You will have to enter the PIN each time you are sending bitcoins.<br>
+        Please write it down at a secure place, there is no recovery option if you lose it.</font></strong><br><br>
+        <input type="submit" class="buttn" value="Add transaction PIN" onclick="checkpin()">
+    </form><br><br>
+    <p id="sendmessage2"></p>
+    </div>
+    <div id="footer">
+    <div id="footertext">CVV KNOWN BALANCE CardShop
+    <a href="index">Home</a>
+    <a href="product">Product</a>
+    <a href="cart">Cart <span id="cartorder"></span></a>
+    <a href="message">Message <span style="color: red;">7</span></a>
+    <a href="wallet">Wallet</a>
+    <a href="order">Order</a>
+    <a href="setting">Setting</a>
+    <a href="index" onclick="logout()">Log Out</a>
+    </div>
+    </div>
+    </body>
+</html>

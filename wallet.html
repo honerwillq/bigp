@@ -1,0 +1,59 @@
+<html>
+    <head>
+	<base href="https://bigpc.online/">
+    <meta http-equiv="Content-type" content="text/html";charset="utf-8">
+    <link rel= "stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="./img/icon.jpg">	
+    <link rel="shortcut icon" type="image/icon" href="./img/icon.jpg">
+    <title>Cardshop - USA CVV KNOWN BALANCE and Worldwide CC & CVV from UK/US/DE/FR/CA/JP/AU/NL/IT/CH/DK/EU/Asia</title>
+    <script src="./js/javascript.js"></script>
+    <script src="./js/btctoday.js"></script>
+	</head>
+    <body onload="checklogin();updatecart();load()">
+     <div id="header">
+    <a href="index">&nbsp;&nbsp;&nbsp;&nbsp;<img src="./img/icon.jpg" alt="Cardshop - USA CVV KNOWN BALANCE and Worldwide CC & CVV from UK/US/DE/FR/CA/JP/AU/NL/IT/CH/DK/EU/Asia"></a>
+    <div class="navbar">
+    <a href="index">Home</a>
+    <a href="product">Product</a>
+    <a href="cart">Cart <span id="cartorder"></span></a>
+    <a href="message">Message <span style="color: red;">7</span></a>
+    <a href="wallet">Wallet</a>
+    <a href="order">Order</a>
+    <a href="setting">Setting</a>
+    <a href="index" onclick="logout()">Log Out</a> 
+    </div>
+    </div>
+    <div id="main">
+    <h3>Bitcoin Wallet</h3>
+    Your Bitcoin balance: <strong>0.0000 &#3647;</strong> ( = 0.00 USD )<br>
+    <br>
+    To load your wallet.<br><br>
+    <form action="payment">
+    <input type="number" class="txt" name="amount" size="12" required="" value="" autocomplete="off" placeholder="50USD" id="topup1" min="40">
+    <input type="submit" class="buttn" value="Load" onclick="topup();">
+    </form>
+    <strong>Withdraw</strong><br><br>
+    <form action="transaction">
+        Withdraw Bitcoins to this address or BTCtrust username::<p>Please make sure <strong>Your Address is Valid</strong> as we only will send base on what you key in</p><input type="text" class="txt" name="btcadd" size="50" required="" autocomplete="off"><br>
+    Amount in Bitcoin <input type="number" class="txt" name="btcamt" size="12" required="" autocomplete="off" step="0.0001"><br>
+    Transaction PIN: <br><input class="txt" type="text" autocomplete="off"  size="6" pattern="\d*" maxlength="6" minlength="6"id="pinn1" onfocus="this.value=''" required=""> <br>
+    <br><input type="submit" class="buttn" value="Send" onclick="balance();withdraw()"><br>
+    Transaction fee :~0.0005 &#3647;<br><br>
+    Exchange rate today:1  <span id="btctoday"></span><br><br>
+    <a href="transaction">Transaction List</a><br><br>
+    </form>
+    </div>
+    <div id="footer">
+    <div id="footertext">CVV KNOWN BALANCE CardShop
+    <a href="index">Home</a>
+    <a href="product">Product</a>
+    <a href="cart">Cart <span id="cartorder"></span></a>
+    <a href="message">Message <span style="color: red;">7</span></a>
+    <a href="wallet">Wallet</a>
+    <a href="order">Order</a>
+    <a href="setting">Setting</a>
+    <a href="index" onclick="logout()">Log Out</a>
+    </div>
+    </div>
+    </body>
+</html>

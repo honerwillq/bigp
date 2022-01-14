@@ -1,0 +1,73 @@
+<html>
+    <head>
+	<base href="https://bigpc.online/">
+    <meta http-equiv="Content-type" content="text/html";charset="utf-8">
+    <link rel= "stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="./img/icon.jpg">	
+    <link rel="shortcut icon" type="image/icon" href="./img/icon.jpg">
+    <title>Cardshop - USA CVV KNOWN BALANCE and Worldwide CC & CVV from UK/US/DE/FR/CA/JP/AU/NL/IT/CH/DK/EU/Asia</title>
+    <script src="./js/javascript.js"></script>
+    </head>
+    <body onload="checklogin();updatecart();checkout();">
+    <div id="header">
+    <a href="index">&nbsp;&nbsp;&nbsp;&nbsp;<img src="./img/icon.jpg" alt="Cardshop - USA CVV KNOWN BALANCE and Worldwide CC & CVV from UK/US/DE/FR/CA/JP/AU/NL/IT/CH/DK/EU/Asia"></a>
+    <div class="navbar">
+    <a href="index">Home</a>
+    <a href="product">Product</a>
+    <a href="cart">Cart <span id="cartorder"></span></a>
+    <a href="message">Message <span style="color: red;">7</span></a>
+    <a href="wallet">Wallet</a>
+    <a href="order">Order</a>
+    <a href="setting">Setting</a>
+    <a href="index" onclick="logout()">Log Out</a> 
+    </div>
+    </div>
+    <div id="main">
+    <h3>Checkout</h3>
+    <div id="check">
+    <table class="table1">
+        <tbody>
+            <thead>
+                <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                </tr>
+            </thead>
+        </tbody > 
+        <tbody id="list">
+        </tbody>
+    </table>
+        <p id="amount"></p>
+        <form action="payment">
+        <input type="hidden"  id="amount1" name="amount" value="">
+        <label >Email</label>
+        <input type="email" id="email" name="email" required="" autocomplete="off" value=""><br><br>
+        <label >Name</label>
+        <input type="text" id="buyername" name="name" required="" autocomplete="off" value=""><br><br>
+        <label >Country</label>
+        <input type="text" id="countryname" name="countryname" required="" autocomplete="off" value=""><br><br>
+        <label><strong>Once You Proceed to Payment ,Your cart will be clear Out</strong></label><br>
+        <input type="submit" value="Proceed to Payment" onclick="clearcart()">
+        </form>
+        <form action="wallet">
+        <p>Deduct from balance</p>
+        <p id="balance">Current Balance : 0.00 USD</p>
+        <input type="submit" value="Deduct for Balance" onclick="balance()">
+        </form>
+        </div> 
+    </div>
+     <div id="footer">
+    <div id="footertext">CVV KNOWN BALANCE CardShop
+    <a href="index">Home</a>
+    <a href="product">Product</a>
+    <a href="cart">Cart <span id="cartorder"></span></a>
+    <a href="message">Message <span style="color: red;">7</span></a>
+    <a href="wallet">Wallet</a>
+    <a href="order">Order</a>
+    <a href="setting">Setting</a>
+    <a href="index" onclick="logout()">Log Out</a>
+    </div>
+    </div>
+    </body>
+</html>
